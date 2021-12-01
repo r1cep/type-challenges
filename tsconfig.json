@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noErrorTruncation": true,
+    "noImplicitReturns": true,
+    "allowJs": true
+  },
+  "exclude": ["node_modules", "dist", "eslintrc.js"]
+}
