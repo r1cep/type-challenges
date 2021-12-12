@@ -23,7 +23,9 @@
 /* _____________ ここにコードを記入 _____________ */
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-type First<T extends any[]> = T extends { [K in 0]: infer U } ? U : never;
+//type First<T extends any[]> = T extends { [K in 0]: infer U } ? U : never;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type First<T extends any[]> = T[0] extends T[number] ? T[0] : never;
 
 /* _____________ テストケース _____________ */
 import { Equal, Expect } from "@type-challenges/utils";
