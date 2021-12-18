@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "repository": "https://github.com/r1cep/type-challenges",
   "scripts": {
+    "tsc": "tsc --noEmit",
     "watch": "tsc --noEmit -w",
     "lint": "run-p lint:*",
     "lint:eslint": "eslint . --ext .js,jsx,ts,tsx --cache --format friendly",
@@ -18,7 +19,7 @@
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix",
       "prettier --write",
-      "tsc --noEmit"
+      "fish -c 'tsc --noEmit'"
     ]
   },
   "devDependencies": {
