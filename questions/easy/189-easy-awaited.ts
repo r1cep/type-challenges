@@ -16,8 +16,8 @@
 /* _____________ ここにコードを記入 _____________ */
 
 type MyAwaited<T extends PromiseLike<unknown>> = T extends PromiseLike<infer U>
-  ? U extends PromiseLike<infer V>
-    ? V
+  ? U extends PromiseLike<unknown>
+    ? MyAwaited<U>
     : U
   : never;
 
